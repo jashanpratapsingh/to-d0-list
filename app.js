@@ -88,6 +88,10 @@ app.get("/:customListName", function(req, res) {
 
 });
 
+app.get("/images/screenshot.png", function(req, res) {
+    res.sendFile(__dirname + "/images/screenshot.png")
+});
+
 app.post("/", function(req, res) {
 
     const itemName = req.body.newItem;
